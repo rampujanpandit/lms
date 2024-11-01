@@ -15,8 +15,8 @@ public class JdbcConfig {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql://localhost:3306/lms_db");
-        dataSource.setUsername("yourUsername");
-        dataSource.setPassword("yourPassword");
+        dataSource.setUsername("'root'");
+        dataSource.setPassword("root");
         return dataSource;
     }
 
